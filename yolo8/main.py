@@ -1,9 +1,6 @@
 from ultralytics import YOLO
 
-
 # DO additional training
-
-import os
 
 model = YOLO("yolov8s-cls.pt", task="classify")  # Load a pre-trained YOLOv10s model
 model.train(data="yolo8/imagewang-320", epochs=10, imgsz=320)  # Train the model by new datasets
